@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <title>Weather App</title>
+</head>
+
+<body class="bg-light">
+  <div class="jumbotron text-center pt-2 pb-2 text-light">
+    <div class="container">
+      <h1 class="display-4">Weather Planner</h1>
+      <p class="lead">Forecast and Local Conditions</p>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <nav class="nav flex-column">
+          <form class="form-inline" id="city-input">
+            <input class="form-control mr-sm-2 w-100" id="add-city" type="search" placeholder="Enter a City"
+              aria-label="Search" required>
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <div class="list-group mt-2" id="citybucket">
+
+          </div>
+        </nav>
+      </div>
+
+      <div id="poof" class="col-md-9 infobucket">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div id="currentweather" class="card-body">
+                <h5 id="forecast-title" class="card-title current-weather"></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-12 pb-5">
+            <div class="card-deck">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="blockquote-footer fixed-bottom">Image 'The Stary Sunrise View from Kolukkumalai, Munnar' courtesy of<cite title="Source Title">Jan J George / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)</cite></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

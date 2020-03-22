@@ -1,0 +1,28 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/2/2e/The_Stary_Sunrise_View_from_Kolukkumalai%2C_Munnar.jpg);
+    background-size: cover;
+    /* box-shadow: inset 0px 0px 201px 10px rgba(0,0,0,0.25); */
+}
+
+body, input, button {
+    text-shadow: 1px 1px 1px #002fa725;
+
+}
+
+.blockquote-footer {
+    z-index: -1000000;
+    font-size: .1rem;
+}
+
+.jumbotron {
+    background: #002fa7;
+    box-shadow: inset 0px 0px 201px 10px rgba(0,0,0,0.25);
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.281);
+
+}
+
+#poof {
+    display: none;
+}
+
