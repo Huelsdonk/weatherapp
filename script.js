@@ -1,12 +1,17 @@
 let cities = [];
-
+var theCity;
 getStoredCities();
 
 function showWeather() {
     $("#currentweather").empty();
     $(".card-deck").empty();
     $(".infobucket").removeAttr("id");
-    var theCity = $(this).attr("data-name");
+    
+    if ($(this).attr("data-name") !== undefined){
+        theCity = $(this).attr("data-name");
+    } else {
+        theCity = cities[cities.length - 1];
+    }
     var apiKey = "&appid=8c3306b9fa9b361b4fc2acc41db11ddd"
     var dayIndex = 1;
 
@@ -106,6 +111,7 @@ function addCities() {
         
     }
     storeCities();
+
 }
 
 function storeCities() {
@@ -115,9 +121,12 @@ function storeCities() {
 
 $("#city-input").on("submit", function (event) {
     event.preventDefault();
+    
+
     var city = $("#add-city").val().trim();
     cities.push(city);
-    addCities()
+    addCities();
+    showWeather();
 });
 
 
